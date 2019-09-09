@@ -1,0 +1,28 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[left = 1.75cm, right = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}
+\begin{document}
+\title{Tarea 2}
+\author{Patrick Murphy}
+\date{29 de Marzo, 2019}
+\maketitle
+\pagenumbering{gobble}
+
+\begin{enumerate}
+  \item \textbf{¿Cuál algoritmo es mejor, BL o BB?} \\
+  \-\hspace{0.5 cm} No siempre tiene sentido hablar de cual algoritmo es mejor. Para poca cantidad de datos ambos algoritmos tienen parecido tiempo de respuesta. Para cuando los datos son más grandes, la búsqueda binaria es más conveniente, pues realiza menos comparaciones con respecto a la búsqueda lineal (\textbf{siempre y cuando} los datos estén ordenados). \\
+  \-\hspace{0.5cm} Sin embargo, la búsqueda binaria es mejor y más rápida si uno la complementa con un algoritmo ordenamiento previo, pues permite que futuras consultas sean mucho más eficientes.
+
+  \item \textbf{¿Es el tiempo de ejecución el mejor indicador de la calidad de un algoritmo?} \\
+  \-\hspace{0.5cm} No, no siempre es el mejor. Pues hay variables involucradas que afectan la velocidad con la que se ejecuta un algoritmo, como por ejemplo el impacto de la máquina, la cual puede que corra un algoritmo más rápido en algunos equipos que en otros. Sin embargo, para efectos prácticos este es el indicador que se utiliza habitualmente, pero se generaliza según funciones matemáticas que modelan el incremento del tiempo de ejecución por cantidad de datos analizados, en vez de ser medido empíricamente.
+
+  \item \textbf{¿Para qué tipos de datos de entrada es necesario medir el rendimiento de un algoritmo?} \\
+  \-\hspace{0.5 cm} Es necesario medir el rendimiento del algoritmo en tres casos: el peor caso, el mejor caso y el caso más probable. Estos casos dependen de los datos de entrada proporcionados, y permiten luego ver cuánto se demora el algoritmo en realizar las comparaciones y cálculos necesarios para retornar un valor. El rendimiento luego se puede apreciar de acuerdo al orden de crecimiento del tiempo.
+
+  \item \textbf{¿Es el número de líneas de código un buen indicador de la rapidez de un algoritmo?} \\
+  \-\hspace{0.5cm} No, no lo es. No interesa cuantas líneas haya en un código, importa más cuántas de estas instrucciones sean las que se ejecuten, ya que finalmente cada vez que se ejecuta una, esta añade un cierto tiempo en la ejecución del algoritmo.
+
+\end{enumerate}
+
+
+
+\end{document}
